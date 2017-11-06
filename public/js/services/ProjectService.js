@@ -19,7 +19,7 @@ angular.module('myApp')
        getProjects: function () {
         return $http.get('/api/projects')
         .then(function (projects) {
-          // console.log('Data', projects.data);
+          console.log('Data', projects.data);
           return projects.data;
         });
       }

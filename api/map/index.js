@@ -257,16 +257,6 @@ router.put('/projects/comments/:id', (req, res) => {
   });
 });
 
-router.put('/projects/photo/:id', (req, res) => {
-  Images.destroy({
-    where: {
-      id: parseInt(req.params.id)
-    }
-  })
-  .then(data => {
-    console.log('Deleted');
-  });
-});
 
 router.get('/schematics', (req, res) => {
   Schematics.findAll({
