@@ -3,7 +3,7 @@
 # dependencies
 node_modules
 config/aws-config.json
-config/config.json
+
 
 # testing
 /coverage
